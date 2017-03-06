@@ -1,5 +1,4 @@
 ﻿using Foundation;
-using HockeyApp.iOS;
 using ImageCircle.Forms.Plugin.iOS;
 using Syncfusion.SfChart.XForms.iOS.Renderers;
 using System;
@@ -17,11 +16,6 @@ namespace XamarinCRM.iOS
     {
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
        	{
-			var manager = BITHockeyManager.SharedHockeyManager;
-			// Set the HockeyApp App Id here:
-			manager.Configure("11111111222222223333333344444444"); // This is just a dummy value. Replace with your real HockeyApp App ID
-			manager.StartManager();
-
             new SfChartRenderer(); // This is necessary for initializing SyncFusion charts.
 
             #if DEBUG

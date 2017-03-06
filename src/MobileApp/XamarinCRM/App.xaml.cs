@@ -68,7 +68,7 @@ namespace XamarinCRM
 
         }
 
-		public void OnStart()
+		protected override void OnStart()
 		{
 			MobileCenter.Start(typeof(Analytics), typeof(Crashes));
 		}
@@ -76,7 +76,7 @@ namespace XamarinCRM
 
         public static void GoToRoot()
         {
-            if (Device.OS == TargetPlatform.iOS)
+			if (Xamarin.Forms.Device.OS == TargetPlatform.iOS)
             {
                 CurrentApp.MainPage = new RootTabPage();
             }

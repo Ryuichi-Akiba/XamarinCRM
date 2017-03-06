@@ -9,7 +9,6 @@ using Xamarin;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using XamarinCRM;
-using HockeyApp.Android;
 using Microsoft.Azure.Mobile;
 
 namespace XamarinCRMAndroid
@@ -20,9 +19,6 @@ namespace XamarinCRMAndroid
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-
-			// Set the HockeyApp App Id here:
-			CrashManager.Register(this, "11111111222222223333333344444444"); // This is just a dummy value. Replace with your real HockeyApp App ID
 
 			// Azure Mobile Services initilization
 			Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
