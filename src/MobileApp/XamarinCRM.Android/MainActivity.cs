@@ -10,6 +10,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using XamarinCRM;
 using HockeyApp.Android;
+using Microsoft.Azure.Mobile;
 
 namespace XamarinCRMAndroid
 {
@@ -33,6 +34,8 @@ namespace XamarinCRMAndroid
             FormsAppCompatActivity.TabLayoutResource = Resource.Layout.tabs;
             new SfChartRenderer(); // This is necessary for initializing SyncFusion charts.
             ImageCircleRenderer.Init();
+
+			MobileCenter.Configure("afb2c57d-01ba-4fc3-8b4f-f173f96acb7f");
 
             LoadApplication(new App());
         }

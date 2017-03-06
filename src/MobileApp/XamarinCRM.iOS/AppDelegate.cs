@@ -8,6 +8,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 using XamarinCRM.Pages;
 using XamarinCRM.Statics;
+using Microsoft.Azure.Mobile;
 
 namespace XamarinCRM.iOS
 {
@@ -41,6 +42,8 @@ namespace XamarinCRM.iOS
             Xamarin.FormsMaps.Init();
 
 			ImageCircleRenderer.Init ();
+
+			MobileCenter.Configure("f8e26157-b25d-4c15-9f04-89903a89c026");
 
             // Bootstrap the "core" Xamarin.Forms app
             LoadApplication(new App());

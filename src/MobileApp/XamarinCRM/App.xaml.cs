@@ -27,6 +27,9 @@ using XamarinCRM.Pages;
 using System.Threading.Tasks;
 using Plugin.Connectivity;
 using Xamarin.Forms.Xaml;
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
 
 //[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 
@@ -64,6 +67,12 @@ namespace XamarinCRM
             }
 
         }
+
+		public void OnStart()
+		{
+			MobileCenter.Start(typeof(Analytics), typeof(Crashes));
+		}
+
 
         public static void GoToRoot()
         {
