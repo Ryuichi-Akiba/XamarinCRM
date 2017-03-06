@@ -317,7 +317,6 @@
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
-  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="..\XamarinCRM\Config\config.xml">
       <Link>Config\config.xml</Link>
@@ -330,7 +329,6 @@
     <ITunesArtwork Include="iTunesArtwork.png" />
     <ITunesArtwork Include="iTunesArtwork%402x.png" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <BundleResource Include="Resources\add_ios_blue%403x.png" />
     <BundleResource Include="Resources\add_ios_gray%403x.png" />
@@ -402,7 +400,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XamarinCRM\XamarinCRM.csproj">
-      <Project>{458941D2-77A4-4B2C-8520-B6EF75947B09}</Project>
+      <Project>{458941d2-77a4-4b2c-8520-b6ef75947b09}</Project>
       <Name>XamarinCRM</Name>
     </ProjectReference>
   </ItemGroup>
